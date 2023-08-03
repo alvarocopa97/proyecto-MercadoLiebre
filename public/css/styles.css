@@ -1,0 +1,265 @@
+/*=== css global===*/
+*{
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+img{
+    width: 100%;
+}
+h3{
+    font-size: 24px;
+}
+
+p{
+    font-size: 12px;
+}
+
+header{
+    background-color: #EAC926;
+}
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+/*===CSS para el div.top-header=== */
+.top-header{
+    display: flex;
+}
+
+
+header div.logo,
+header .form{
+    width: 50%;
+}
+
+header div.logo{
+    padding: 10px;
+}
+/*=== CSS para el header .form===*/
+.form{
+    width: 50%;
+    margin: auto;
+    padding: auto;
+    display: flex;
+}
+.form input{
+    padding-left: 10px;
+    background-color: #FFF;
+    border: 1px solid white;
+    outline: none;
+    width: 80%;
+}
+
+.submit{
+    background-color: #FFF;
+    border: 1px solid white;
+    padding:10px;
+}
+#compraIcon{
+    position: absolute;
+    top: 10%;
+    margin-left: 30%;
+}
+nav ul a:hover{text-decoration:underline}
+nav ul {
+    display: none;
+}
+header nav{
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: #000;
+}
+
+
+div.burger-menu{
+    text-align: center;
+    padding-top: 40px;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    padding-bottom: 0px;
+    width: 40px;
+}
+
+/*=== CSS para productos===*/
+
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h3,
+.description{
+    color: #666;
+}
+.description{
+    display: none;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+.main-article{
+    padding: 10px;
+    position: relative;
+    border-top: 4px solid #ebebeb;
+}
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+/*=== CSS para el main section article i===*/
+
+.products article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: 90px;
+    position: absolute;
+    top: -20px;
+    animation: cambio 10s infinite ;
+}
+@keyframes cambio {
+    0% {}
+    50% {-webkit-transform: translate(30px,0); }
+}
+main section h3{
+    margin: 20px 0px;
+}
+.products{
+    position: relative;
+}
+
+
+/*=== CSS al footer ===*/
+footer{
+    padding-top: 1em;
+    background-color: white;
+    padding-bottom: 1.3em;
+}
+#pieDePagina{
+    margin-bottom: 50px;
+    text-align: center;
+}
+footer .fas{
+    color: blue;
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+@media (min-width: 361px){
+    /*=== Hacer visible main section article .descripcion===*/
+    .description{
+        display: inline;
+    }
+    
+    
+}
+
+@media (min-width: 769px){
+.top-header .logo{
+ width: 30%;
+} 
+.form{
+    margin: auto;
+    padding: auto;
+}
+#compraIcon{
+    position: static;
+    margin: auto;
+    padding: auto;
+}
+
+.products{
+    display: flex;
+}
+.product{
+    margin-right: 2%;
+}
+#compraIcon{
+    display: inline;
+}
+nav ul{
+    display: inline;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+.opcionesIzquierda{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+.opcionesDerecha{
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+}
+main section article{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+.burger-menu{
+    display: none;
+
+}
+.description{
+    padding-top: 30px;
+}
+}
