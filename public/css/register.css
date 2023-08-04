@@ -1,0 +1,57 @@
+/*=== CSS al registro ===*/
+form{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-bottom: 7px;
+}
+form input{
+    margin-bottom: 15px;
+}
+/*=== CSS al formulario ===*/
+.formulario{
+    margin:auto;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius:5px;
+}
+.tituloRegister{
+    padding: 30px;
+    text-align: center;
+}
+.perfil-Usuario{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 15px;
+}
+.intereses{
+    padding-top: 15px;
+    align-self: center;
+}
+.intereses input{
+    margin-right: 5px;
+}
+
+/*=== CSS a los botones ===*/
+.buttons .button {
+    width: 45%;
+}
+.button {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: white;
+    border: none;
+    padding: 1em;
+    border-radius: 3px;
+}
+.btnBorrar{
+    background-color: red;
+}
+.btnEnviar{
+    background-color: rgb(0, 51, 255);
+}

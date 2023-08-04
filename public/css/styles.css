@@ -191,6 +191,7 @@ footer{
     padding-top: 1em;
     background-color: white;
     padding-bottom: 1.3em;
+    text-align: center;
 }
 #pieDePagina{
     margin-bottom: 50px;
@@ -203,8 +204,7 @@ footer .fas{
     margin-top: 60px;
 }
 @media (min-width: 361px){
-    /*=== Hacer visible main section article .descripcion===*/
-    .description{
+    article .description{
         display: inline;
     }
     
@@ -252,6 +252,12 @@ nav{
     width: 35%;
     justify-content: space-around;
 }
+.main-article{
+    padding-bottom: 40px;
+}
+.main-article  .description{
+    margin-top: 50px;
+}
 main section article{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
@@ -259,7 +265,9 @@ main section article{
     display: none;
 
 }
-.description{
-    padding-top: 30px;
+#pieDePagina{
+    display: flex;
+    justify-content: space-around;
 }
+
 }
