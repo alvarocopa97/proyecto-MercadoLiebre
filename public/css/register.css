@@ -23,12 +23,13 @@ form input{
     text-align: center;
 }
 .perfil-Usuario{
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     margin: auto;
     padding-top: 15px;
 }
+
 .intereses{
     padding-top: 15px;
     align-self: center;
@@ -38,20 +39,31 @@ form input{
 }
 
 /*=== CSS a los botones ===*/
-.buttons .button {
-    width: 45%;
-}
+
 .button {
     margin-top: 30px;
-    margin-bottom: 20px;
     color: white;
     border: none;
     padding: 1em;
     border-radius: 3px;
+    width: 49%;
 }
 .btnBorrar{
     background-color: red;
 }
 .btnEnviar{
     background-color: rgb(0, 51, 255);
+}
+
+@media (min-width: 361px){
+    
+}
+
+@media (min-width: 769px){
+    .formulario{
+        width: 40%;
+    }
+    .perfil-Usuario {
+        width: 40%;
+    }
 }
