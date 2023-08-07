@@ -43,40 +43,17 @@
         </header>
         <main>
             <div class="formulario">
-                <h4 class="tituloRegister">REGISTRO</h4>
+                <h4 class="tituloRegister">LOGIN</h4>
                 <form action="/register" method="GET">
                     <label for="nombre">Nombre: </label>
                     <input id="nombre"name="nombre" type="text">
-    
-                    <label for="email">Email: </label>
-                    <input id="email"name="email" type="email">
                     
                     <label for="contraseña">Contraseña: </label>
                     <input id="contraseña"name="password" type="password">
-
-                    <h4>Fecha de nacimiento</h4>
-                    <input id="contraseña"name="password" type="date">
-
-                    <label for="domicilio">Domicilio: </label>
-                    <input id="domicilio"name="domicilio" type="text">
-
-                    <h4>Perfil Usuario</h4>
-                    <div class="perfil-Usuario">
-                        <input type="radio" name="perfil" value="Comprador">Comprador
-                        <input type="radio" name="perfil" value="Vendedor">Vendedor
+                    <div class="boton-login">
+                        <button type="submit" class="button btnIniciar">Iniciar Sesion</button>
                     </div>
-                    <h4>Intereses</h4>
-                    <div class="intereses">
-                        <input type="checkbox" name="interes" value="Electro">Electro<br>
-                        <input type="checkbox" name="interes" value="Moda">Moda<br>
-                        <input type="checkbox" name="interes" value="Hogar">Hogar<br>
-                        <input type="checkbox" name="interes" value="Jugueteria">Jugueteria<br>
-                        <input type="checkbox" name="interes" value="Vida Sana">Vida Sana<br>
-                    </div>
-                    <div class="buttons">
-                        <button type="reset" class="button btnBorrar">Borrar</button>
-                        <button type="submit" class="button btnEnviar">Enviar</button>
-                    </div>
+                   
                   </form>
             </div>
         </main>

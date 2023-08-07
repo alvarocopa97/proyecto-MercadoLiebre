@@ -33,7 +33,6 @@ header div.top-header p{
     display: flex;
 }
 
-
 header div.logo,
 header .form{
     width: 50%;
@@ -41,6 +40,7 @@ header .form{
 
 header div.logo{
     padding: 10px;
+    ;
 }
 /*=== CSS para el header .form===*/
 .form{
@@ -105,7 +105,10 @@ div.burger-menu i{
 
 /*=== CSS para productos===*/
 
-
+.product{
+    margin-right: 2%;
+    width: 300px;
+}
 .price{
     font-size: 18px;
     width: 30%;
@@ -119,6 +122,7 @@ div.burger-menu i{
 .description{
     font-size: 16px;
     font-weight: normal;
+    
 }
 
 h3,
@@ -179,10 +183,13 @@ main section article i,
     50% {-webkit-transform: translate(30px,0); }
 }
 main section h3{
-    margin: 20px 0px;
+    padding-left: 20px ;
+    padding-top: 20px;
 }
 .products{
     position: relative;
+    margin: 20px
+    
 }
 
 
@@ -211,9 +218,15 @@ footer .fas{
 @media (min-width: 361px){
     article .description{
         display: inline;
+        padding-top: 50px;
     }
-    
-    
+    .products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }
 
 @media (min-width: 769px){
@@ -233,9 +246,7 @@ footer .fas{
 .products{
     display: flex;
 }
-.product{
-    margin-right: 2%;
-}
+
 #compraIcon{
     display: inline;
 }
@@ -257,12 +268,7 @@ nav{
     width: 35%;
     justify-content: space-around;
 }
-.main-article{
-    padding-bottom: 40px;
-}
-.main-article  .description{
-    margin-top: 50px;
-}
+
 main section article{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
